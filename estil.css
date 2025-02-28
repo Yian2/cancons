@@ -1,0 +1,84 @@
+#contingut{
+    position: relative;
+    display: flex;
+    gap: 10px; /* Opcional: espacio entre elementos */
+    
+}
+  
+.portades_albums_section{
+    min-height: 300px;
+    padding: 50px 20px;
+    background-color: #ffeaf9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.portades_albums_section h2 {
+    font-size: 2.5em;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+  
+  
+.carousel-container {
+    overflow: hidden; /* Amaga les imatges que surten dels límits */
+    width: 100%; 
+    max-width: 900px; 
+    margin: 0 auto;
+    height: 450px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #ffeaf9;
+    display: flex; /* para alinear */
+    justify-content: center;
+}
+  
+.carousel {
+    display: flex; 
+    gap: 10px; 
+    transition: transform 0.5s ease-in-out;
+    justify-content: center; /* Centra las imágenes dentro del carousel */
+}
+  
+  
+.carousel img {
+    width: 600px; /* Imatges més petites però amb bona visibilitat */
+    height: 800px;
+    border-radius: 5px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.carousel img:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+  
+  
+.carousel img.active {
+    display: block; /* Mostra només la imatge activa */
+    opacity: 1;
+    transform: scale(1.05);
+}
+  
+  
+.fletxa {
+    position: absolute; /* Para poder posicionarlas de forma absoluta */
+    top: 50%; /* Coloca la flecha al 50% de la altura del contenedor */
+    transform: translateY(-50%); /* Ajusta para centrarla completamente */
+    z-index: 10; /* Asegura que las flechas estén por encima de las imágenes */
+}
+  
+#botoPrev {
+    left: -50px; /* Ajusta la posición horizontal para la flecha de "anterior" */
+}
+  
+#botoNext {
+    right: -50px; /* Ajusta la posición horizontal para la flecha de "siguiente" */
+    
+}
+  
+  
+  

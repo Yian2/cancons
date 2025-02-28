@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffeaf9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+
+#catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dues columnes */
+    gap: 20px; 
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.song {
+    background: #d9abab; 
+    padding: 15px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+.song-image {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    margin-right: 10px; 
+}
+
+
+
+#catalog a {
+    display: block; 
+    font-weight: bold; 
+    color: #007bff; 
+    text-decoration: none; 
+    margin-bottom: 5px; 
+}
+
+#catalog a:hover {
+    text-decoration: underline; 
+}
+
+audio {
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+.speed-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+    margin: 10px 0;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: red;
+    border-radius: 3px;
+    transition: width 0.1s linear;
+  }
+  
+
+/*css de la llista de preferits*/
+
+.container-llista {
+    width: 60%;
+    margin: 20px auto;
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #d63384;
+}
+
+input, button {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    border: 2px solid #ff85a2;
+}
+
+input {
+    background-color: #ffe6ea;
+    border: 2px solid #ff99b9;
+    color: #4a4a4a;
+}
+
+button {
+    background-color: #ff5c8a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff3b71;
+}
+
+#songs {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#songs th {
+    background-color: #ff85a2;
+    color: white;
+    padding: 12px;
+}
+
+#songs td, #songs th {
+    border: 1px solid #ffb6c1;
+    padding: 10px;
+    text-align: center;
+}
+
+#songs tr:nth-child(even) {
+    background-color: #ffe6ea;
+}
+
+#songs tr:hover {
+    background-color: #ffccda;
+}

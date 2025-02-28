@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="estil2.css">
+</head>
+<body>
+    <h1>Cançons</h1>
+    <div id="catalog">
+       
+    </div>
+    <div class="speed-buttons">
+        
+    </div>
+    
+    
+    <div class="container-llista">
+		<div class="songs-app">
+			<h2>Lista de cançons</h2>
+			<form action="javascript:void(0);">
+				<input type="text" id="title" placeholder="Nom de la cançó" size="55">
+				<input type="number" id="stars" placeholder="Puntuació (0-5)" min="0" max="5">
+				<button class="button" onclick="add()">Afegir cançó</button>
+			</form>
+		</div>
+		<table id="songs">
+			<tr><th>Canció</th><th>Puntuació</th></tr>
+		</table>
+		<button class="button" onclick="del()">Borrar llista</button>
+
+		<table id="toClone">
+			<tr><td></td><td></td></tr>
+		</table>
+	</div>
+
+
+    <script src="dades.js"></script>
+    <script src="javaScript2.js"></script>
+</body>
+</html>
